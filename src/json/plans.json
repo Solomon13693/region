@@ -1,0 +1,42 @@
+[
+    {
+        "plan_name": "CLASSIC PLAN 50% 2 days",
+        "plan": "CLASSIC",
+        "min": 1000.00,
+        "max": 10000.00,
+        "profit": 50,
+        "days": 2
+    },
+    {
+        "plan_name": "PREMIUM PLAN 100% 5 days",
+        "plan": "PREMIUM",
+        "min": 5000.00,
+        "max": 20000.00,
+        "profit": 100,
+        "days": 5
+    },
+    {
+        "plan_name": "ULTIMATE PLAN 100% 10 days",
+        "plan": "ULTIMATE",
+        "min": 10000.00,
+        "max": 50000.00,
+        "profit": 100,
+        "days": 10
+    },
+    {
+        "plan_name": "BASIC PLAN 30% 1 day",
+        "plan": "BASIC",
+        "min": 500.00,
+        "max": 5000.00,
+        "profit": 30,
+        "days": 1
+    },
+    {
+        "plan_name": "ADVANCED PLAN 80% 7 days",
+        "plan": "ADVANCED",
+        "min": 7000.00,
+        "max": 30000.00,
+        "profit": 80,
+        "days": 7
+    }
+]

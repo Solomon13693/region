@@ -30,6 +30,7 @@ const BasicInfo = ({ user, token }) => {
                         email: user ? user?.email : '',
                         name: user ? user?.name : '',
                         phone: user ? user?.phone : '',
+                        address: user ? user?.address : '',
                     }}
                     validationSchema={ProfileSchema}
                     onSubmit={async (values, actions) => {
@@ -45,6 +46,8 @@ const BasicInfo = ({ user, token }) => {
                             const response = await authService.updateUser(data);
 
                             const { message, user } = response
+
+                            console.log(user);
 
                             dispatch(setUser(user))
 
@@ -80,6 +83,10 @@ const BasicInfo = ({ user, token }) => {
 
                                 <div class="col-sm-6 mb-3">
                                     <CustomInput label="Phone Number" name="phone" type="tel" placeholder="Phone Number" />
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <CustomInput label="Address" name="address" type="text" placeholder="Address" />
                                 </div>
 
                                 <div className="col-sm-6"></div>

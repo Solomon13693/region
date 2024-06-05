@@ -7,7 +7,6 @@ const Login = async (payload) => {
 };
 
 const updateUser = async (payload) => {
-    console.log(payload);
     const response = await axios.post('/user/update/profile', payload?.values, {
         headers: {
             "Access-Control-Allow-Origin": "*",

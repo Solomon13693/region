@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 const profile = Cookies.get('profile') || null;
 const user = JSON.parse(profile)
 
+
 const AuthSlice = createSlice({
   name: 'auth',
   initialState: {

@@ -47,8 +47,8 @@ export const RegistrationSchema = Yup.object({
 export const ProfileSchema = Yup.object({
   name: Yup.string()
     .required('Full name is required'),
-    // address: Yup.string()
-    // .required('Address is required'),
+    address: Yup.string()
+    .required('Address is required'),
   email: Yup.string()
     .email('Invalid email address')
     .required('Email address is required'),
